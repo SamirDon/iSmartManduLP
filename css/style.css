@@ -1,0 +1,73 @@
+html,
+body {
+    overflow-x: hidden;
+  }
+  .hidden-thing {
+    position: absolute;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+header,
+.img{
+    max-width: 60%;
+    height: auto;
+}
+
+.img-responsive{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin:0 auto;
+}
+.Image{
+  background:#ccc;
+  padding:30px;
+}
+.white-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.img-fluid{
+    max-width: 100%;
+    max-height: auto;
+}
+
+#desktopView {display: block;}
+#mobileView {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#desktopView {display: none;}
+#mobileView {display: block;}
+
+}
+
+.blink{
+    font-size: 240px;
+    color: rgb (0, 137, 226);
+    
+    animation: blink 1s infinite;
+ }
+
+ @keyframes blink{
+    0%{opacity: 1;}
+    75%{opacity: 1;}
+    76%{ opacity: 0;}
+    100%{opacity: 0;}
+ }
+
+ #privacyPolicyAlign{
+    text-align: justify;
+    text-justify: inter-word;
+ }
+
+ .btns {
+    border: 2px solid #EC1B2E;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
